@@ -1,0 +1,88 @@
+// Normally mainpage styles
+ 
+ /*----------header----------*/
+
+ .header{
+	@include povh('');
+ }
+ 	.head_top{
+ 		@include povh('');
+ 		padding: 17px 0 10px 0;
+ 	}
+ 		.logo{
+ 			float: left;
+ 		}
+ 		.head_contacts{
+ 			float: right;
+ 			width: 230px;
+ 			line-height: 1;
+ 			a{
+ 				display: block;
+				color: #1f1f1f;
+				font-size: 25px;
+				text-decoration: none;
+				font-weight: 300;
+				b{
+					font-weight: 600;
+				}
+				&:before{
+					display: inline-block;
+					position: relative;
+					top: 4px;
+					margin-right: 5px;
+					content: url(../img/icons/tel.png);
+				}
+ 			}
+ 			a.button{
+ 				@include linear-gradient(#1b67a8, #014e8e);
+ 				font-size: 14px;
+ 				color: #fff;
+ 				text-align: center;
+ 				padding: 0;
+ 				width: 222px;
+ 				height: 33px;
+ 				border-radius: 13px;
+ 				line-height: 33px;
+ 				margin-top: 11px;
+ 				&:before{
+ 					display: none;
+ 				}
+ 			}
+ 		}
+ 		.head_info{
+ 			@include povh('');
+ 			text-align: center;
+ 			.mail{
+ 				padding: 10px 0 0 0;
+ 				font-size: 14px;
+ 				img{
+ 					padding: 0 5px 0 0;
+ 				}
+ 			}
+ 		}
+ 			.search{
+ 				padding: 10px 0 0 0;
+ 				input{
+ 					width: 286px;
+ 					height: 39px;
+ 				}
+ 			}
+/*----------end-header----------*/	
+
+
+/*----------main----------*/
+ 
+ .main{
+	@include povh('');
+ }
+
+/*----------end main----------*/	
+
+	
+/*----------footer----------*/
+ 
+ .footer{
+	@include povh('');
+ }
+
+/*----------end footer----------*/
