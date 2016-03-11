@@ -9,10 +9,10 @@ $(document).ready(function() {
 	});
 	
 	//bxslider
-	$('.bxslider').bxSlider({
-	  nextSelector: '#slider-next',
-	  prevSelector: '#slider-prev',
-	  nextText: 'Onward →',
-	  prevText: '← Go back'
+	$('.slider_wrap ul').bxSlider();
+
+	//sidebar menu
+	$( ".sid_menu li a" ).click(function() {
+	  $( this ).next("ol").toggle( "slow");
 	});
 });
