@@ -510,3 +510,34 @@
  		}
 
 /*----------end footer----------*/
+
+/*----------modal----------*/
+.modal{
+	padding: 30px ;
+	p{
+		text-align: center;
+		font-size: 17px;
+	}
+}
+	.modal_form{
+		text-align: center;
+		input{
+			width: 242px;
+			height: 43px;
+			margin: 0 7px;
+			padding: 0 10px 0 55px;
+			border-radius: 3px;
+			background: #ebebeb;
+		}
+		div{
+			padding-bottom: 30px;
+		}
+		input.name_inp{
+			background:#ebebeb url(../img/icons/man_icon.png) no-repeat  13px center;
+		}
+		input.phone_inp{
+			background:#ebebeb url(../img/icons/phone_icon.png) no-repeat  13px center;
+		}
+	}
+/*----------end modal----------*/
+

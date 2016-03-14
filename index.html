@@ -37,7 +37,7 @@
 				<a href="tel:84997555505">8 (499) <b>755 55 05</b></a>
 				<a href="tel:84997555505">8 (926) <b>785 56 10</b></a>
 				<a href="tel:84997555505">8 (926) <b>785 59 10</b></a>
-				<a href="#" class="button">Заказать обратный звонок</a>
+				<a href="#order_call" class="fancybox button">Заказать обратный звонок</a>
 			</div>
 			<div class="head_info">
 				<nav class="social">
@@ -321,12 +321,13 @@
 				по низкой цене <br>
 				<a href="#">Информация по продукции</a>
 			</div>
-			<address>© 2012. Stuff Textile - трикотаж из натурального хлопка.</address>
 			<div class="head_contacts">
 				<a href="tel:84997555505">8 (499) <b>755 55 05</b></a>
 				<a href="tel:84997555505">8 (926) <b>785 56 10</b></a>
 				<a href="tel:84997555505">8 (926) <b>785 59 10</b></a>
 			</div>
+			<address>© 2012. Stuff Textile - трикотаж из натурального хлопка.</address>
+			
 		</div>
 	</div>
 	<div class="border"></div>
@@ -335,7 +336,21 @@
 
 <!--modal-->
 <div class="modal modal_order_call" id="order_call">
-	<div class="title"><span>Заполните поля и мы перезвоним вам</span></div>
+	<div class="title"><span>Заполните поля и мы <br>перезвоним вам</span></div>
+	<div class="modal_form">
+		<div>
+			<input type="text" class="name_inp" placeholder="Ваше имя">
+			<input type="text" class="phone_inp" placeholder="Телефон">
+		</div>
+		<div>
+			<button class="fancybox button" href="#thanks">ОТПРАВИТЬ</button>
+		</div>
+	</div>
+</div>
+
+<div class="modal" id="thanks">
+	<div class="title"><span>Спасибо за заявку</span></div>
+	<p>Наш менеджер перезвонит Вам в ближайшее время</p>
 </div>
 <!--end-modal-->
 

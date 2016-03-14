@@ -2,16 +2,78 @@
 // You can read about usage in https://github.com/paranoida/sass-mediaqueries 
 
 //styles for custom device width
+@include mq($max-width: 1200px) {
+  .container{
+  	width: auto;
+  	padding-left: 5px;
+  	padding-right: 5px;
+  }
+  	.product_block{
+  		width: 29%;
+  		img{
+  			max-width: 100%;
+  		}
+  	}
+  	.tags_block{
+  		background-size: 100% 100%;
+   	 	width: 45%;
+   	 	p{
+   	 		font-size: 13px;
+   	 	}
+  	}
+  	.print strong{
+  		height: auto;
+  	}
+  	.main_menu li{
+  		padding: 0 13px;
+  	}
+  	.foot_left{
+  		font-size: 15px;
+  	}
+}
+
 @include mq($max-width: 1000px) {
-  
+	.foot_info address{
+		float: none;
+		width: 100%;
+		text-align: center;
+		clear: both;
+		padding: 10px;
+	}
 }
 
-//styles for ipad
-@include ipad {
-	
+@include mq($max-width: 850px) {
+	.logo{
+		text-align: center;
+		float: none;
+		padding-bottom: 20px;
+	}
+	.head_info{
+		float: left;
+	}
+	.slider_wrap .bx-prev{
+		left: 1%;
+	}
+	.slider_wrap .bx-next{
+		right: 1%;
+	}
+	.main_menu li{
+		font-size: 12px;
+		&.sale{
+			font-size: 12px;
+		}
+	}
+	.sidebar{
+		float: none;
+		width: 100%;
+		margin-bottom: 30px;
+	}
 }
 
-//styles for iphone
-@include iphone5 {
-
-} 
+@include mq($max-width: 768px) {
+	.footer{
+		.main_menu{
+			display: none;
+		}
+	}
+}
