@@ -15,4 +15,9 @@ $(document).ready(function() {
 	$( ".sid_menu li a" ).click(function() {
 	  $( this ).next("ol").toggle( "slow");
 	});
+
+	//mobile menu
+	$( ".menu_trigger" ).click(function() {
+	  $( this ).next("ul").slideToggle( "slow");
+	});
 });
