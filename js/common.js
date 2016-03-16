@@ -77,4 +77,12 @@ $(document).ready(function() {
     	pause: 7000
 	});
 
+	$('.production-slider ul').bxSlider({
+		minSlides: 1,
+    	maxSlides: 1,
+    	pager: false,
+    	moveSlides: 1,
+	});
+
+
 });
