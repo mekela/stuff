@@ -590,6 +590,95 @@
 		width: 440px;
 		margin: 0 25px 25px 0;
 	}
+.search-block{
+	position: relative;
+}
+	.search-result{
+		position: relative;
+		color: #01569e;
+		font-size: 18px;
+		font-weight: 600;
+		margin-bottom: 15px;
+	}
+	.search-box{
+		position: relative;
+		display: table;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+		.search-head{
+			position: relative;
+			display: table-cell;
+			vertical-align: top;
+			width: 46px;
+		}
+			.search-num{
+				position: relative;
+				width: 46px;
+				height: 46px;
+				color: #3a6196;
+				font-size: 20px;
+				font-weight: 700;
+				line-height: 46px;
+				text-align: center;
+				border-radius: 50%;
+				overflow: hidden;
+				background: #ffffff; /* Old browsers */
+				background: -moz-linear-gradient(top,  #ffffff 0%, #e6e6e6 100%); /* FF3.6-15 */
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e6e6e6)); /* Chrome4-9,Safari4-5 */
+				background: -webkit-linear-gradient(top,  #ffffff 0%,#e6e6e6 100%); /* Chrome10-25,Safari5.1-6 */
+				background: -o-linear-gradient(top,  #ffffff 0%,#e6e6e6 100%); /* Opera 11.10-11.50 */
+				background: -ms-linear-gradient(top,  #ffffff 0%,#e6e6e6 100%); /* IE10 preview */
+				background: linear-gradient(to bottom,  #ffffff 0%,#e6e6e6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			}
+		.search-body{
+			position: relative;
+			display: table-cell;
+			vertical-align: top;
+			padding: 10px 0 0 15px;
+			box-sizing: border-box;
+		}
+			.search-title{
+				position: relative;
+				margin-bottom: 5px;
+				a{
+					color: #3d3c3c;
+					font-size: 16px;
+				}
+			}
+			.search-text{
+				position: relative;
+				color: #646464;
+				font-size: 15px;
+				line-height: 23px;
+				margin-bottom: 5px;
+			}
+			.search-path{
+				position: relative;
+				color: #646464;
+				font-size: 15px;
+				ul{
+					display: inline-block;
+					vertical-align: top;
+					li{
+						position: relative;
+						display: inline-block;
+						color: #8d908b;
+						font-size: 14px;
+						margin-right: 5px;
+						a{
+							position: relative;
+							color: #0068b4;
+							margin-right: 20px;
+							&:after {
+							    content: '→';
+							    position: absolute;
+							    right: -20px;
+							}
+						}
+					}
+				}
+			}
 
 /*-------------------------        mobile        -------------------------*/
 @include mq($max-width: 1200px) {
