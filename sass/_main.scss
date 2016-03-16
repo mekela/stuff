@@ -216,7 +216,7 @@
 						display: block;
 						text-decoration: none;
 						padding: 0 20px;
-						&:hover{
+						&:hover, &.active{
 							background:#01569e;
 							span{
 								border-color: transparent;
@@ -544,3 +544,29 @@
 	}
 /*----------end modal----------*/
 
+/*-------------bread-----------*/
+.bread{
+	padding-bottom: 8px;
+	ul{
+		li{
+			display: inline-block;
+			color: #0068b4;
+			font-size: 14px;
+			padding: 0 20px 0 0;
+			position: relative;
+			&:before{
+				content: '>';
+				position: absolute;
+				right: 4px;
+				top: 1px;
+			}
+			a{
+				text-decoration: none;
+			}
+			span{
+				text-decoration: underline;
+			}
+		}
+	}
+}
+/*---------end-bread-----------*/
