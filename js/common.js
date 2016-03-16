@@ -64,6 +64,7 @@ $(document).ready(function() {
 		$('.additionally-box[data-title="' + $(this).attr('data-title') + '"]').addClass('active');
 	});
 
+	//----------------------            product related slider          -----------------------------
 	$('.related-products ul').bxSlider({
 		slideWidth: 274,
 		minSlides: 1,
