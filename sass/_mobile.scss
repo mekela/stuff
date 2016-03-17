@@ -73,7 +73,7 @@
 	}
 }
 
-@include mq($max-width: 768px) {
+@include mq($max-width: 769px) {
 	.footer{
 		.main_menu{
 			display: none;
@@ -101,6 +101,37 @@
 				font-size: 15px;
 			}
 		}
+	.modal_form input{
+		display: block;
+		margin: 7px;
+		width: 100%;
+	}
+	.bread{
+		padding-bottom: 30px;
+	}
+	.contacts .order_wrap .order_block{
+		iframe{
+			width: 100% !important;
+		}
+	}
+	.content_txt{
+		img{
+			max-width: 100%;
+		}
+	}
+	.certifications {
+		margin-left: 0;
+		text-align: center;
+		a{
+		display: inline-block;
+		float: none;
+		margin-left: 3px;
+		margin-right: 3px;
+		}
+	}
+	.sert_wrap strong{
+		text-align: center;
+	}
 }
 
 @include mq($max-width: 650px) {
@@ -148,6 +179,24 @@
 		width: 100%;
 		height: auto;
 		margin-top: 15%;
+	}
+	.catalog_filter label{
+		display: block;
+		text-align: center;
+		float: none;
+		margin-bottom: 10px;
+		width: 100%;
+		span{
+			display: block;
+		}
+		&:last-child{
+			text-align: center;
+		}
+	}
+	.contacts_block dl{
+		width: 100%;
+		float: none;
+		margin-bottom: 20px;
 	}
 }
 

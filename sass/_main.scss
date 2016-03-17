@@ -65,6 +65,8 @@
  				input{
  					width: 286px;
  					height: 39px;
+ 					background:url(../img/search_item.png) no-repeat 10px center;
+ 					padding-left: 50px;
  				}
  			}
  	.main_menu{
@@ -577,6 +579,9 @@
 		input.phone_inp{
 			background:#ebebeb url(../img/icons/phone_icon.png) no-repeat  13px center;
 		}
+		input.email_inp{
+			background:#ebebeb url(../img/icons/email_icon.png) no-repeat  13px center;
+		}
 	}
 /*----------end modal----------*/
 
@@ -829,6 +834,9 @@
 	.content_img{
 		padding-bottom: 20px;
 		border-radius: 3px;
+		img{
+		border-radius: 3px;
+		}
 		&.float_left{
 			padding-right: 25px;
 		}

@@ -81,7 +81,7 @@ $(document).ready(function() {
 		minSlides: 1,
     	maxSlides: 1,
     	pager: false,
-    	moveSlides: 1,
+    	moveSlides: 1
 	});
 
 
