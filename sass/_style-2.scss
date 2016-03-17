@@ -325,7 +325,6 @@
 			}
 				.scheme-head{
 					position: relative;
-					width: 90px;
 				}
 					.scheme-img{
 						background: #01569e;
@@ -846,6 +845,18 @@
 				}
 			}
 		}
+.yarn{
+	position: relative;
+	color: #646464;
+	font-size: 15px;
+	line-height: 23px;
+	margin-bottom: 40px;
+	img{
+		max-width: 100%;
+		border-radius: 3px;
+		margin-bottom: 30px;
+	}
+}
 /*-------------------------        mobile        -------------------------*/
 @include mq($max-width: 1200px) {
 	.product-property{
@@ -942,6 +953,7 @@
 			.scheme-head{
 				display: table-cell;
 				vertical-align: top;
+				width: 90px;
 			}
 				.scheme-img{
 					margin-bottom: 0;
