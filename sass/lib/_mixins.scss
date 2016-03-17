@@ -1,5 +1,16 @@
 //start my mixins
 
+@mixin text() {
+  font-size: 15px;
+  color: #646464;
+  margin-bottom: 33px;
+}
+@mixin bold_title() {
+    font-size: 18px;
+    color: #01569e;
+    font-weight: 600;
+}
+
 //position and overflow
 @mixin povh($povh) {
 position: relative;
