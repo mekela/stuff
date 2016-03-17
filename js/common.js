@@ -64,6 +64,7 @@ $(document).ready(function() {
 		$('.additionally-box[data-title="' + $(this).attr('data-title') + '"]').addClass('active');
 	});
 
+	//----------------------            product related slider          -----------------------------
 	$('.related-products ul').bxSlider({
 		slideWidth: 274,
 		minSlides: 1,
@@ -75,5 +76,13 @@ $(document).ready(function() {
     	auto: true,
     	pause: 7000
 	});
+
+	$('.production-slider ul').bxSlider({
+		minSlides: 1,
+    	maxSlides: 1,
+    	pager: false,
+    	moveSlides: 1,
+	});
+
 
 });
