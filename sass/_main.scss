@@ -288,7 +288,6 @@
 
 			.product_wrap{
 				font-size: 0;
-				margin-left: -25px;
 				padding-bottom: 40px;
 			}
 				.product_block{
@@ -302,7 +301,8 @@
 					vertical-align: top;
 					border: 1px solid #e0e0e0;
 					transition: all 0.5s ease;
-					margin: 0 0 25px 24px;
+					margin: 0 0 25px 0;
+					box-sizing: border-box;
 					&:hover{
 						border: 1px solid #2766a5;
 						figure{
@@ -390,7 +390,6 @@
 				}
 				.tags_wrap{
 					overflow: hidden;
-					margin-left: -20px;
 					padding-bottom: 55px;
 				}
 					.tags_block{
@@ -401,7 +400,8 @@
 						border-radius: 3px;
 						color: #fff;
 						text-align: center;
-						margin: 0 0 20px 20px;
+						margin: 0 0 20px 0;
+						box-sizing: border-box;
 						p{
 							font-size: 16px;
 							line-height: 20px;

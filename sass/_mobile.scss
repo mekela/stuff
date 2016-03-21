@@ -69,7 +69,7 @@
 		margin-bottom: 30px;
 	}
 	.content{
-		padding-left: 5px;
+		padding-left: 0;
 	}
 }
 
@@ -150,12 +150,6 @@
 	.title span{
 		padding: 0 85px;
 		padding-top: 7px;
-	}
-	.tags_block{
-	width: auto;
-    float: none;
-    margin: 0 auto 20px auto;
-    max-width: 420px;
 	}
 
 	.order_wrap .order_tags{
@@ -246,4 +240,93 @@
 			}
 		}
 	}
+}
+
+
+@include mq($min-width: 1001px){
+	.product_block{
+  		width: 30%;
+  		margin-left: 5%;
+  		&:nth-child(3n+1){
+  			margin-left: 0;
+  		}
+  	}
+  	.tags_block{
+  		width: 48%;
+  		margin-left: 4%;
+  		&:nth-child(2n+1){
+  			margin-left: 0;
+  		}
+  	}
+}
+@include mq($min-width: 851px, $max-width: 1000px){
+	.product_block{
+  		width: 47%;
+  		margin-left: 6%;
+  		&:nth-child(2n+1){
+  			margin-left: 0;
+  		}
+  	}
+  	.tags_block{
+  		width: 70%;
+  		margin-left: 15%;
+  	}
+  	.production-slider .bx-controls a{
+  		width: 45px;
+  		height: 45px;
+  		margin-top: -22px;
+  	}
+}
+@include mq($min-width: 651px, $max-width: 850px){
+	.product_block{
+  		width: 32%;
+  		margin-left: 2%;
+  		&:nth-child(3n+1){
+  			margin-left: 0;
+  		}
+  	}
+  	.tags_block{
+  		width: 48%;
+  		margin-left: 4%;
+  		&:nth-child(2n+1){
+  			margin-left: 0;
+  		}
+  	}
+  	.production-slider .bx-controls a{
+  		width: 40px;
+  		height: 40px;
+  		margin-top: -20px;
+  	}
+}
+@include mq($min-width: 401px, $max-width: 650px){
+	.product_block{
+  		width: 47%;
+  		margin-left: 6%;
+  		&:nth-child(2n+1){
+  			margin-left: 0;
+  		}
+  	}
+  	.tags_block{
+  		width: 70%;
+  		margin-left: 15%;
+  	}
+  	.production-slider .bx-controls a{
+  		width: 35px;
+  		height: 35px;
+  		margin-top: -14px;
+  	}
+}
+@include mq($max-width: 400px){
+	.product_block{
+  		width: 100%;
+  		margin-bottom: 20px;
+  	}
+  	.tags_block{
+  		width: 100%;
+  	}
+  	.production-slider .bx-controls a{
+  		width: 30px;
+  		height: 30px;
+  		margin-top: -10px;
+  	}
 }
