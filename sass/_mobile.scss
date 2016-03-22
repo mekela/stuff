@@ -71,6 +71,9 @@
 	.content{
 		padding-left: 0;
 	}
+	.blank{
+		padding: 8px 0px 0px 0 !important; 
+	}
 }
 
 @include mq($max-width: 769px) {
@@ -192,9 +195,14 @@
 		float: none;
 		margin-bottom: 20px;
 	}
+
+	.content_txt .content_img.float_left, .content_txt .content_img.float_right{
+		width: 100%;
+		float: none;
+	}
 }
 
-@include mq($max-width: 400px) {
+@include mq($max-width: 400px) { 
 	.search input{
 		margin-bottom: 10px;
 	}
