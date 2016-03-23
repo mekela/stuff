@@ -135,6 +135,12 @@
 	.sert_wrap strong{
 		text-align: center;
 	}
+
+	.content_txt{
+		br{
+			display: none;
+		}
+	}
 }
 
 @include mq($max-width: 650px) {
@@ -184,7 +190,7 @@
 		margin-bottom: 10px;
 		width: 100%;
 		span{
-			display: block;
+			
 		}
 		&:last-child{
 			text-align: center;

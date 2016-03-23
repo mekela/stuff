@@ -751,6 +751,22 @@
 			border-radius: 3px;
 			padding: 0 10px;
 			background-color: #ececec;
+			padding-right: 19px;
+			  -webkit-appearance: none;
+			  background-image: url('../img/icons/select_arrow.png');
+			  background-position: right center;
+			  background-repeat: no-repeat;
+			  line-height: 1em;
+			  /* for FF */
+			  -moz-appearance: none;
+			  text-indent: 0.01px; 
+			  text-overflow: '';
+			  /* for IE */
+			  -ms-appearance: none;
+			  appearance: none!important;
+		}
+		select::-ms-expand {
+		  display: none;
 		}
 		&:last-child{
 			text-align: right;
